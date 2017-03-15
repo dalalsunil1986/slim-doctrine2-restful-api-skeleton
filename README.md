@@ -1,11 +1,12 @@
 # RESTful API skeleton using Slim 3, Doctrine 2 (MySQL), PHPUnit, Mockery
-with sample unit and integration test using test database 
+Single POST endpoint storing data via Doctrine 2, and unit test on the used service.
 
 by Elvis Ciotti <elvisciotti@gmail.com>
 
 ### Requirements
-* PHP 5.4 or above
-* Mysql at least v5.0 running (install with docker if not available, see section below)
+* PHP 5.4 or above.
+* Mysql at least v5.0 running (install with docker if not available, see section below).
+ Any doctrine2-compatible database can be used instead, change config accordingly
 
 ### Setup and run
 
@@ -38,7 +39,7 @@ by Elvis Ciotti <elvisciotti@gmail.com>
     
  * add data
  
-    # insert file1.json
+    # insert test file.json
     curl -X POST -d @app/fixtures/file.json http://localhost:8000/record
     
     # clean db
