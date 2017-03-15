@@ -33,3 +33,7 @@ $container['em'] = function ($c) {
 $container['providerService'] = function ($c) {
     return new \App\Service\ProviderService($c->get('em'), $c->get('logger'));
 };
+
+$container[App\Action\RecordAddAction::class] = function ($c) {
+    return new App\Action\RecordAddAction($c->get('providerService'), $c->get('logger'));
+};
