@@ -1,7 +1,7 @@
 # RESTful API skeleton using Slim 3, Doctrine 2 (MySQL), PHPUnit, Mockery
 Single POST endpoint storing data via Doctrine 2, and unit test on the used service.
 
-by Elvis Ciotti <elvisciotti@gmail.com>
+by Elvis Ciotti
 
 ### Requirements
 * PHP 5.4 or above.
